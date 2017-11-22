@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="733.0" style="-fx-background-color: #7fb3d5;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etdah.HomeController">
+   <children>
+      <Label layoutX="147.0" layoutY="7.0" text="ETDAH FOOD AND DRINK">
+         <font>
+            <Font name="Clarendon Blk BT Black" size="38.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="save" layoutX="36.0" layoutY="390.0" onAction="#save" style="-fx-background-color: #ccd1d1;" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="del" layoutX="106.0" layoutY="390.0" onAction="#hapus" style="-fx-background-color: #ccd1d1;" text="Delete">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <GridPane layoutX="24.0" layoutY="48.0" prefHeight="299.0" prefWidth="294.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="123.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="52.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="119.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="44.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="44.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="j1" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="h1" text="12k" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="j5" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label text="     NAME" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text=" PRICE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="25.0" prefWidth="122.0" text="          TOTAL" GridPane.columnIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label GridPane.rowIndex="7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="h2" text="15k" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="h3" text="13k" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="h4" text="15k" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="h5" text="17k" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="h6" text="16k" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="j2" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="j3" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="j6" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="j4" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="h7" text="4k" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="h8" text="6k" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="j7" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <TextField fx:id="j8" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <JFXCheckBox fx:id="fc" prefHeight="19.0" prefWidth="121.0" text="Fried Chiken" GridPane.rowIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="fg" prefHeight="19.0" prefWidth="118.0" text="Fried Gurame" GridPane.rowIndex="3">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="fd" prefHeight="19.0" prefWidth="118.0" text="Fried Duck" GridPane.rowIndex="4">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="bc" prefHeight="19.0" prefWidth="118.0" text="BBQ Chiken" GridPane.rowIndex="5">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="bg" prefHeight="19.0" prefWidth="118.0" text="BBQ Gurame" GridPane.rowIndex="6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="bd" prefHeight="19.0" prefWidth="118.0" text="BBQ Duck" GridPane.rowIndex="7">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="tea" prefHeight="19.0" prefWidth="118.0" text="Ice Tea" GridPane.rowIndex="9">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="orange" prefHeight="19.0" prefWidth="118.0" text="Orange Juice" GridPane.rowIndex="10">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </GridPane>
+      <GridPane layoutX="412.0" layoutY="65.0" prefHeight="91.0" prefWidth="246.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="156.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="91.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="Total Price" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="total" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="nama" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <JFXButton fx:id="print" layoutX="469.0" layoutY="167.0" onAction="#print" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #ccd1d1;" text="Print" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exit" layoutX="188.0" layoutY="390.0" onAction="#exit" style="-fx-background-color: #ccd1d1;" text="Exit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="173.0" fitWidth="343.0" layoutX="-96.0" layoutY="-55.0">
+         <image>
+            <Image url="@../img/yummy.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="sio" layoutX="247.0" layoutY="391.0" onAction="#keluar" style="-fx-background-color: #ccd1d1;" text="Sign Out">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="398.0" layoutY="232.0" prefHeight="201.0" prefWidth="331.0" style="-fx-background-color: #bdc3c7;" />
+      <GridPane layoutX="427.0" layoutY="245.0" prefHeight="173.0" prefWidth="276.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="211.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="91.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="91.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="total1" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="nama1" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" />
+            <Label text="Menu" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="menu11" maxWidth="225.0" minWidth="174.0" prefHeight="88.0" prefWidth="219.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fitHeight="63.0" fitWidth="67.0" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../img/price.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="43.0">
+               <image>
+                  <Image url="@../img/orang.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
