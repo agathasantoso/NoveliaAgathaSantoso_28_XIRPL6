@@ -23,6 +23,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -34,22 +35,25 @@ public class LoginController implements Initializable {
 
     @FXML
     private JFXButton sin;
-    public String User="admin";
+    public String User="pelanggan";
     public String Pass="1234";
     
-    @FXML
-    private JFXButton exit;
     @FXML
     private TextField user;
     @FXML
     private TextField pass;
     String username, password;
     @FXML
-    private JFXButton sup;
+    private JFXButton exit;
     
 
      @FXML
     void masuk(ActionEvent event) {
+         if(user.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Harap inputkan username & password dengan benar");
+        }else if (pass.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Harap isikan username & password dengan benar");
+         }
        username=user.getText();
        password=pass.getText();
         
@@ -88,8 +92,5 @@ public class LoginController implements Initializable {
         System.exit(0);
     }
 
-    @FXML
-    private void buat(ActionEvent event) {
-    }
     
 }

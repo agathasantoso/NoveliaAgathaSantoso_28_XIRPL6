@@ -125,35 +125,35 @@ public class HomeController implements Initializable {
             menu += fc.getText()+"\n";
             jumlahmakan=Integer.parseInt(j1.getText());
             hagatotal1=harga*jumlahmakan;
-            System.out.println(hagatotal1);
+            System.out.println("");
         }
         if(fg.isSelected()){     
             int harga = 15000;
             menu += fg.getText()+"\n";
             jumlahmakan=Integer.parseInt(j2.getText());
             hagatotal2=harga*jumlahmakan;
-            System.out.println(hagatotal2);
+            System.out.println("");
         }
         if(fd.isSelected()){     
             int harga = 13000;
             menu += fd.getText()+"\n";
             jumlahmakan=Integer.parseInt(j3.getText());
             hagatotal3=harga*jumlahmakan;
-            System.out.println(hagatotal3);
+            System.out.println("");
         }
         if(bc.isSelected()){     
             int harga = 15000;
             menu += bc.getText()+"\n";
             jumlahmakan=Integer.parseInt(j4.getText());
             hagatotal4=harga*jumlahmakan;
-            System.out.println(hagatotal4);
+            System.out.println("");
         }
         if(bg.isSelected()){     
             int harga = 17000;
             menu += bg.getText()+"\n";
             jumlahmakan=Integer.parseInt(j5.getText());
             hagatotal5=harga*jumlahmakan;
-            System.out.println(hagatotal5);
+            System.out.println("");
         }
         if(bd.isSelected()){     
             int harga = 16000;
@@ -165,16 +165,16 @@ public class HomeController implements Initializable {
         if(tea.isSelected()){     
             int harga = 4000;
             menu += tea.getText()+"\n";
-            jumlahmakan=Integer.parseInt(j7.getText());
-            hagatotal7=harga*jumlahmakan;
-            System.out.println(hagatotal7);
+            jumlahminum=Integer.parseInt(j7.getText());
+            hagatotal7=harga*jumlahminum;
+            System.out.println("");
         }
         if(orange.isSelected()){     
             int harga = 6000;
             menu += orange.getText()+"\n";
-            jumlahmakan=Integer.parseInt(j8.getText());
-            hagatotal8=harga*jumlahmakan;
-            System.out.println(hagatotal8);
+            jumlahminum=Integer.parseInt(j8.getText());
+            hagatotal8=harga*jumlahminum;
+            System.out.println("");
         }
         totalbayar = hagatotal1+hagatotal2+hagatotal3+hagatotal4+hagatotal5+hagatotal6+hagatotal7+hagatotal8;
         tampilTotalBayar=String.valueOf(totalbayar);

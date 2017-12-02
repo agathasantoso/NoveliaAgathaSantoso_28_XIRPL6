@@ -5,6 +5,8 @@
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -226,20 +228,27 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="total1" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="nama1" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" />
+            <TextField fx:id="total1" editable="false" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="nama1" editable="false" prefHeight="33.0" prefWidth="156.0" style="-fx-background-color: #f8f9f9;" GridPane.columnIndex="1" />
             <Label text="Menu" GridPane.rowIndex="2">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <JFXTextArea fx:id="menu11" maxWidth="225.0" minWidth="174.0" prefHeight="88.0" prefWidth="219.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <ImageView fitHeight="63.0" fitWidth="67.0" GridPane.rowIndex="1">
+            <JFXTextArea fx:id="menu11" editable="false" maxWidth="225.0" minWidth="174.0" prefHeight="88.0" prefWidth="219.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fitHeight="50.0" fitWidth="54.0" rotate="119.7" GridPane.rowIndex="1">
                <image>
                   <Image url="@../img/price.png" />
                </image>
+               <effect>
+                  <SepiaTone>
+                     <input>
+                        <Glow />
+                     </input>
+                  </SepiaTone>
+               </effect>
             </ImageView>
-            <ImageView fitHeight="45.0" fitWidth="43.0">
+            <ImageView fitHeight="39.0" fitWidth="39.0">
                <image>
                   <Image url="@../img/orang.png" />
                </image>

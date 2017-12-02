@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="489.0" style="-fx-background-color: #5499c7;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etdah.LoginController">
    <children>
-      <Label layoutX="201.0" layoutY="24.0" text="LOGIN">
+      <Label layoutX="142.0" layoutY="26.0" text="LOGIN to MENU">
          <font>
             <Font name="Bodoni Bk BT Book" size="31.0" />
          </font>
@@ -25,9 +25,8 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <JFXButton fx:id="sin" layoutX="82.0" layoutY="249.0" onAction="#masuk" style="-fx-background-color: #85c1e9;" text="Sign In" />
-      <JFXButton fx:id="sup" layoutX="216.0" layoutY="249.0" onAction="#buat" style="-fx-background-color: #aed6f1;" text="Sign Up" />
-      <JFXButton fx:id="exit" layoutX="354.0" layoutY="249.0" onAction="#exit" style="-fx-background-color: #d6eaf8;" text="Exit" />
+      <JFXButton fx:id="sin" layoutX="144.0" layoutY="249.0" onAction="#masuk" style="-fx-background-color: #85c1e9;" text="Sign In" />
+      <JFXButton fx:id="exit" layoutX="290.0" layoutY="249.0" onAction="#exit" style="-fx-background-color: #d6eaf8;" text="Exit" />
       <TextField fx:id="user" layoutX="192.0" layoutY="84.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-color: #ebf5fb;" />
       <TextField fx:id="pass" layoutX="192.0" layoutY="158.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-color: #ebf5fb;" />
       <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="135.0" layoutY="78.0">
@@ -40,5 +39,15 @@
             <Image url="@../img/key.png" />
          </image>
       </ImageView>
+      <Label layoutX="192.0" layoutY="115.0" text="Username : pelanggan">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="188.0" text="Password : 1234">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
